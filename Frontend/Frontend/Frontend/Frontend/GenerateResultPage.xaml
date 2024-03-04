@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Frontend.GenerateResultPage"
+             BackgroundColor="#F6D5F3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="ImageVal"/>
+            <Label x:Name="Promt" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
+            <Frame CornerRadius="20" HasShadow="False" HeightRequest="20" WidthRequest="315" BackgroundColor="#F6D5F3" BorderColor="Gray" Margin="20,20,20,0">
+                <Label x:Name="Rate" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15"/>
+            </Frame>
+            <FlexLayout>
+                <Button  Background="#AC72A6" TranslationY="10" TextColor="White" Margin="30,10,10,0" HeightRequest="50" WidthRequest="50" CornerRadius="10" Text="1" Clicked="RateOne" HorizontalOptions="Start"/>
+                <Button Background="#AC72A6" TranslationY="10" TextColor="White" Margin="10"  HeightRequest="50" WidthRequest="50" CornerRadius="10" Text="2" Clicked="RateTwo" HorizontalOptions="Start"/>
+                <Button Background="#AC72A6" TranslationY="10" TextColor="White" Margin="10"  HeightRequest="50" WidthRequest="50" CornerRadius="10" Text="3" Clicked="RateThree" HorizontalOptions="Start"/>
+                <Button Background="#AC72A6" TranslationY="10" TextColor="White" Margin="10"  HeightRequest="50" WidthRequest="50" CornerRadius="10" Text="4" Clicked="RateFour" HorizontalOptions="Start"/>
+                <Button Background="#AC72A6" TranslationY="10" TextColor="White" Margin="10"  HeightRequest="50" WidthRequest="50" CornerRadius="10" Text="5" Clicked="RateFive" HorizontalOptions="Start"/>
+            </FlexLayout>
+            <Label  x:Name="IsPublic" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15"/>
+            <Button Background="#AC72A6" TranslationY="10" TextColor="White" Margin="20,0,20,0" HeightRequest="50" CornerRadius="10" Text="Изменить публичность" Clicked="MakePublic"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

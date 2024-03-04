@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Frontend.HistoryItemPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="ImageVal"/>
+            <Label VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" Text="{Binding Result}"/>
+            <Button VerticalOptions="EndAndExpand"  Background="#AC72A6" TextColor="White" Margin="20,0,20,20" HeightRequest="50" CornerRadius="10" Text="Назад" Clicked="Cancel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
